@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: #F3F5FC;    
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --fonte-primaria: 'Inter', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;    
+    height: 80vh;
+	width: 80vw;	
+    display: block;	
+    flex-direction: column;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    margin-left: 10%;
+}
+
+header{
+    height: 10%;
+    width: 80%;    
+    padding-top: 1%;        
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    gap: 25%;        
+    margin-left:10%;
+}
+
+.esquerda {    
+    display: flex;        
+    flex-direction: column;
+}
+
+.direita {    
+    display: flex;
+    flex-direction: column;  
+    position: relative;      
+}
+
+#txt_cripto{
+    border: 0;    
+    background-color: var(--cor-primaria);
+    width: 680px;
+    height: 288px;
+    font-size: 32px;
+    color: #0A3871;    
+    padding: 20px;
+    font-family: var(--fonte-primaria);  
+    margin-top: 10%;  
+}
+
+#txt_descripto{
+    border-radius: 32px;
+    border: 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    font-size: 24px;
+    color: #495057;    
+    font-family: var(--fonte-primaria);    
+}
+
+.aviso_botoes{
+    margin-top: 5%;    
+}
+
+.botoes {    
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 20%;
+    margin-top: 5%;      
+}
+
+button{
+    border: 0;    
+    width: 328px;
+    height: 67px;           
+}
+
+button{
+    border-radius: 20px;
+    border: 0; 
+    font-family: var(--fonte-primaria);               
+}
+
+#btn_cripto{
+    background-color: #0A3871;
+    border: 1px solid  #0A3871;
+    color: #F3F5FC;
+}
+
+#btn_descripto{   
+    background-color: #D8DFE8;        ;     
+    border: 1px solid  #0A3871;
+    color:  #0A3871;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#img_menina{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 90%;
+    height: 90%;    
+}
+
+footer{    
+    height: 4%;     
+    width: 78%;
+    margin-left: 5%;        
+    font-size: 20px;
+    color: #272727;
+    font-family: var(--fonte-primaria);
+    padding: 1%;    
+}
+
+@media (max-width: 380px) {    
+
+    body{              
+        box-sizing: border-box;                       
+    } 
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header{
+        margin-left: 50px;
+    }
+
+    #logo{
+        width: 80px;
+        margin-top: 10px;
+        margin-left: -80px;
+    } 
+
+    #img_menina{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        height: 80%;
+        visibility: hidden;    
+    }
+
+    #txt_descripto{
+        border-radius: 10px;
+        border: 0;
+        width: 200px;
+        height: 122px;
+        padding: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: #495057;    
+        font-family: var(--fonte-primaria);    
+    }
+
+    #txt_cripto{
+        border: 0;    
+        background-color: var(--cor-primaria);
+        width: 200px;
+        height: 122px;
+        font-size: 15px;
+        color: #0A3871;    
+        padding: 20px;
+        font-family: var(--fonte-primaria);  
+        margin-top: 10%;  
+    }  
+    
+    .aviso_botoes{
+        margin-top: 5%;    
+    }    
+
+    footer{    
+        height: 4%;     
+        width: 78%;
+        margin-left: 40px;        
+        font-size: 15px;
+        color: #272727;
+        font-family: var(--fonte-primaria);
+        padding: 1%;    
+        margin-top: 20px;
+    }      
+    
+    .aviso_botoes{
+        margin-top: 15%;    
+    } 
+    
+    .botoes {
+        display: flex;
+        flex-direction: column;        
+        gap: 50%;
+        margin-top: 5%;      
+    }
+    
+    button{
+        border-radius: 20px;
+        border: 0; 
+        font-family: var(--fonte-primaria);  
+        width: 250px;             
+        height: 50px;        
+    }
+
+    #btn_cripto{
+        background-color: #0A3871;
+        border: 1px solid  #0A3871;
+        color: #F3F5FC;  
+        margin-top: 20px;      
+    }
+
+    #btn_descripto{   
+        background-color: #D8DFE8;        ;     
+        border: 1px solid  #0A3871;
+        color:  #0A3871;
+        margin-top: 20px;
+    }
+   
+}
+
+@media (min-width: 380px) and (max-width: 1440px) {    
+
+    body{              
+        box-sizing: border-box;         
+        margin-top: 100px;           
+    } 
+
+    header{
+        margin-left: -30px;
+    }
+
+    #logo{
+        width: 80px;
+    } 
+
+    #img_menina{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        height: 80%;    
+    }
+
+    #txt_descripto{
+        border-radius: 32px;
+        border: 0;
+        width: 200px;
+        height: 472px;
+        padding: 20px;
+        font-size: 15px;
+        color: #495057;    
+        font-family: var(--fonte-primaria);    
+    }
+
+    #txt_cripto{
+        border: 0;    
+        background-color: var(--cor-primaria);
+        width: 600px;
+        height: 144px;
+        font-size: 15px;
+        color: #0A3871;    
+        padding: 20px;
+        font-family: var(--fonte-primaria);  
+        margin-top: 10%;  
+    }  
+    
+    .aviso_botoes{
+        margin-top: 5%;    
+    }    
+
+    footer{    
+        height: 4%;     
+        width: 78%;
+        margin-left: 200px;        
+        font-size: 15px;
+        color: #272727;
+        font-family: var(--fonte-primaria);
+        padding: 1%; 
+        margin-top: -50px;   
+    }       
+    
+    .botoes {
+        gap: 10%;
+        margin-top: 5%;      
+    }
+    
+    button{
+        border-radius: 20px;
+        border: 0; 
+        font-family: var(--fonte-primaria);               
+    }
+
+    #btn_cripto{
+        background-color: #0A3871;
+        border: 1px solid  #0A3871;
+        color: #F3F5FC;
+    }
+
+    #btn_descripto{   
+        background-color: #D8DFE8;        ;     
+        border: 1px solid  #0A3871;
+        color:  #0A3871;
+        
+    }
+   
+}
+
+@media (min-width: 1450px) and (max-width: 1920px) {    
+
+    body{              
+        box-sizing: border-box;         
+        margin-top: 100px;           
+    } 
+
+    header{
+        margin-left: 160px;
+    }
+
+    #logo{
+        width: 80px;
+    } 
+
+    #img_menina{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        height: 80%;    
+    }
+
+    #txt_descripto{
+        border-radius: 32px;
+        border: 0;
+        width: 200px;
+        height: 472px;
+        padding: 20px;
+        font-size: 15px;
+        color: #495057;    
+        font-family: var(--fonte-primaria);    
+    }
+
+    #txt_cripto{
+        border: 0;    
+        background-color: var(--cor-primaria);
+        width: 600px;
+        height: 144px;
+        font-size: 15px;
+        color: #0A3871;    
+        padding: 20px;
+        font-family: var(--fonte-primaria);  
+        margin-top: 10%;  
+    }  
+    
+    .aviso_botoes{
+        margin-top: 5%;    
+    }    
+
+    footer{    
+        height: 4%;     
+        width: 78%;
+        margin-left: 200px;        
+        font-size: 15px;
+        color: #272727;
+        font-family: var(--fonte-primaria);
+        padding: 1%;    
+    }       
+    
+    .botoes {
+        gap: 10%;
+        margin-top: 5%;      
+    }
+    
+    button{
+        border-radius: 20px;
+        border: 0; 
+        font-family: var(--fonte-primaria);               
+    }
+
+    #btn_cripto{
+        background-color: #0A3871;
+        border: 1px solid  #0A3871;
+        color: #F3F5FC;
+    }
+
+    #btn_descripto{   
+        background-color: #D8DFE8;        ;     
+        border: 1px solid  #0A3871;
+        color:  #0A3871;
+        
+    }
+   
+}

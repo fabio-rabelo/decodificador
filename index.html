@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header><img src="/assets/Logo.png" id="logo"></header>    
+    <main>
+        <div class="principal">   
+
+            <div class="esquerda">
+                <textarea id="txt_cripto" placeholder="Digite seu texto"></textarea>            
+                
+                <div class="aviso_botoes">
+                    <img src="/assets/obs.png" id="txt_aviso">
+                    
+                    <div class="botoes">
+                        <button type="button" onclick="criptografar()" id="btn_cripto">Criptografar</button>
+                        <button type="button" onclick="descriptografar()" id="btn_descripto">Descriptografar</button>
+                    </div>                    
+                </div>                
+            </div>
+
+            <div class="direita">
+                <textarea id="txt_descripto"></textarea>
+                <img src="/assets/1.PNG" id="img_menina" alt="Imagem menina sentada" >
+            </div>
+
+        </div>                        
+    </main>
+    <footer>Desenvolvido por: Fabio Rabelo</footer>
+
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>
+
